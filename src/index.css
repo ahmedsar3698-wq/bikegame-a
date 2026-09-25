@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Teko', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  
+  /* Prevent pull to refresh and elastic bounce on mobile touch devices */
+  .overscroll-none {
+    overscroll-behavior: none;
+  }
+  
+  /* Safe area insets for notched phones */
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/* Ensure no text selection during fast tapping */
+* {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+

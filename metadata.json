@@ -1,0 +1,7 @@
+{
+  "name": "Velocity: Mobile Bike Rush",
+  "description": "A sleek, mobile-first arcade bike racing game featuring responsive touch controls, dynamic highway courses, multiple difficulties, and persistent progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
